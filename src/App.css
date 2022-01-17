@@ -1,0 +1,66 @@
+.App{
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  height: 100vh;
+}
+.grid-container {
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+.header{
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 280px));
+  grid-template-rows: repeat(3, minmax(100px, 160px));
+  grid-gap: 10px;
+}
+.grid-modal > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.grid-modal > .closeButton{
+  background-color: red;
+  color: white;
+  margin: 5px;
+  margin-left: 85%;
+  border-radius: 25%;
+}
+.grid > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-pop {
+  background: transparent;
+  z-index: 999;
+  max-height: 220px;
+  margin: auto;
+  padding: 1em 2em 2em;position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 80vh;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: #000;
+  opacity: 0.75;
+}
+.modal-img{
+  height: 90vh;
+  width: 100vw;
+  object-fit: contain;
+}
